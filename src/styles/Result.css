@@ -1,0 +1,22 @@
+div.view {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #efefef;
+  text-align: right;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+div.view span.currentResult {
+  display: block;
+  font-size: 2rem;
+  min-height: 3rem;
+}
+
+div.view span.prevResult {
+  display: block;
+  min-height: 2rem;
+  font-size: 1.4rem;
+}

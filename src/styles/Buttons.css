@@ -1,0 +1,29 @@
+div.buttons {
+  background-color: #fefefe;
+  border: 1px solid #fefefe;
+}
+
+div.buttons button {
+  border: 1px solid #fefefe;
+  background-color: rgba(171, 255, 246, 0.6);
+  width: 25%;
+  height: 80px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+div.buttons button:hover {
+  background-color: rgba(171, 255, 246, 0.2);
+}
+
+div.buttons button:focus {
+  outline: none;
+}
+
+div.buttons .big {
+  width: 50%;
+}
+
+div.buttons .clear {
+  color: rgba(0, 0, 0, 0.5);
+}
