@@ -87,9 +87,22 @@ class Calculator extends Component {
     }
   };
 
+  handleKey = e => {
+    if (
+      (!isNaN(e.key) ||
+        this.action.operators.includes(e.key) ||
+        e.key === "-") &&
+      e.keyCode !== 32
+    )
+      this.handleInput(e.key);
+    else if (e.keyCode === 8) this.backspace();
+    else if (e.keyCode === 13 || e.keyCode === 187) this.sumUp();
+    return;
+  };
+
   render() {
     return (
-      <div className="app-containter">
+      <div tabIndex={0} onKeyDown={this.handleKey} className="app-containter">
         <div className="Calculator">
           <Result
             result={this.state.result}

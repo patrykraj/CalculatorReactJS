@@ -1,6 +1,10 @@
+#root {
+  height: 100%;
+}
+
 .app-containter {
   background: linear-gradient(45deg, #3e5151, #decba4);
-  height: 100vh;
+  height: 100%;
   min-width: 100%;
 }
 
